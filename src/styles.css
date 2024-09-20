@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.code-block {
+  background-color: #f4f4f4;
+  border-left: 4px solid #1976d2;
+  color: #333;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  font-size: 1rem;
+  line-height: 1.4;
+}
