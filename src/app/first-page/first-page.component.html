@@ -12,29 +12,78 @@
     <header>
         <h1>Let's Learn Angular</h1>
     </header>
-    <nav>
+    <!-- <nav>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#basics">Basics</a></li>
             <li><a href="#components">Components</a></li>
             <li><a href="#directives">Directives</a></li>
         </ul>
-    </nav>
+    </nav>-->
     <main>
         <div class="content">
             <section id="introduction">
-                <h2>Introduction to Angular</h2>
+                <h2>What is Angular?</h2>
                 <p>Angular is a platform and framework for building single-page client applications using HTML and
                     TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you
                     import into your applications.</p>
-                <img src="https://yt3.googleusercontent.com/y4J_Fs5ksRlxx6_LzT1VKxVqH_T8Vyn_RN_YYgLJhuMzBS5qxTgm7NlEcMkQd3hgCpfWtYcEUg=s900-c-k-c0x00ffffff-no-rj"
-                    alt="Angular logo">
+                <h2>Angular CLI:</h2>
+                <p>Angular CLI is a command-line interface (CLI) for Angular. Angular CLI is a
+                    powerful tool that greatly simplifies the process of developing, testing, and deploying Angular
+                    applications. It is designed to streamline the development workflow for Angular projects. It
+                    automates many common tasks, enforces best practices, and helps maintain consistency across
+                    projects.</p>
+
+                <h2>Angular CLI, node.js and npm: </h2>
+                <p>Understanding the relationship between Angular CLI, Node.js, and npm is crucial for Angular
+                    development. </p>
+                <ol>
+                    <li>Node.js Dependency:
+                        <ul>
+                            <li>JavaScript Runtime:</li>
+                            Angular CLI is built on <a href="https://nodejs.org/en">Node.js</a>, which provides
+                            a JavaScript runtime environment outside
+                            the
+                            browser.
+                            This allows Angular CLI to execute JavaScript code on your machine for tasks like project
+                            scaffolding, building, and serving.
+                        </ul>
+
+                    <li>npm:</li>
+                    <ul>
+                        <li>npm is used to manage dependencies for your Angular project. It downloads and installs all
+                            the necessary libraries and tools that Angular needs.
+                        </li>
+                        <li>Global installation of npm packages:
+                            <pre class="code-block">npm install -g &#64;angular/cli</pre>
+                        </li>
+                    </ul>
+                </ol>
             </section>
             <section id="basics">
-                <h2>Angular Basics</h2>
-                <p>Angular applications are made up of components.</p>
+                <h2>Creating your first Angular project:</h2>
+                <ol>
+                    <li>Install Node.js and npm</li>
+                    <ul>
+                        <li>Download and Install from <a href="https://nodejs.org/en">node.js</a></li>
+                        <li>Verify installations by:
+                            <pre class="code-block">node --version</pre>
+                            <pre class="code-block">npm --version</pre>
+                        </li>
+                    </ul>
+                    <li>Install Angular CLI:</li>
+                    <ul>
+                        <li>Open a command prompt or temminal in your project directory</li>
+                        <li>Run the following command:
+                            <pre class="code-block">npm install -g &#64;angular/cli</pre>
+                        </li>
+                        <li>Verify installation:
+                            <pre class="code-block">ng --version</pre>
+                        </li>
+                    </ul>
+                </ol>
             </section>
-            <!-- Add more sections as needed -->
+
         </div>
         <aside>
             <h3>Quick Links</h3>
@@ -42,6 +91,7 @@
                 <li><a href="#">Angular Documentation</a></li>
                 <li><a href="#">Angular CLI</a></li>
                 <li><a href="#">Angular Material</a></li>
+                <li><a href="https://nodejs.org/en">Node.js</a></li>
             </ul>
         </aside>
     </main>
