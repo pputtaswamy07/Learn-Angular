@@ -28,7 +28,7 @@ nav ul li a {
 }
 main {
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 3fr 7fr;
   gap: 2rem;
 }
 .content {
@@ -68,4 +68,33 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+.sidebar {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  width: 200px; /* Set a fixed width */
+  background-color: #f8f8f8; /* Set a background color */
+}
+.sidebar li {
+  padding: 8px 10px; /* Add padding */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.sidebar li:hover {
+  background-color: #e0e0e0; /* Light grey color on hover */
+}
+
+.sidebar li:active {
+  background-color: #d0d0d0; /* Slightly darker grey when clicked */
+}
+
+.sidebar li[routerLinkActive] {
+  background-color: #e0e0e0; /* Light grey color when active */
+}
+.sidebar .active {
+  background-color: #ddb5b5; /* Light grey color for the active route */
+  font-weight: bold; /* Make the text bold */
+  color: #b61919; /* Change the text color */
 }
