@@ -6,6 +6,6 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './create-project.component.html',
-  styleUrl: './create-project.component.css',
+  styleUrls: ['./create-project.component.css', '../../styles.css'],
 })
 export class CreateProjectComponent {}
