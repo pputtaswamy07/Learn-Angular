@@ -93,8 +93,3 @@ main {
 .sidebar li[routerLinkActive] {
   background-color: #e0e0e0; /* Light grey color when active */
 }
-.sidebar .active {
-  background-color: #ddb5b5; /* Light grey color for the active route */
-  font-weight: bold; /* Make the text bold */
-  color: #b61919; /* Change the text color */
-}
