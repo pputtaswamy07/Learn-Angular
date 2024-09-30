@@ -1,0 +1,95 @@
+<main>
+    <aside>
+        <ul class="sidebar">
+            <li routerLink="/introduction">Introduction</li>
+            <li routerLink="/createProject">Let's build a project</li>
+            <li routerLink="/module" routerLinkActive="active">Modules</li>
+        </ul>
+    </aside>
+    <div>
+        <h2>Module Introduction</h2>
+        <section id="basics">
+            <p>
+                Angular provides a powerful feature called Modules to help you organize
+                your code into reusable components. While the modern approach involves
+                using standalone components to build Angular projects, you can still
+                structure your project using traditional modules.<br />
+                Using modules allows you to group related components, services,
+                directives, and pipes into cohesive units. This organization simplifies
+                code maintenance and enhances reusability across your application.
+            </p>
+            <p>
+                In a Standalone Component you will import necessary modules directly
+                within the component. While in a Module, you import all related
+                components, services, and other dependencies within a module, which can
+                then be used throughout your application.
+            </p>
+
+            <h3>Let's create a Module</h3>
+            <p>
+                Let's create a root module called
+                <span class="highlight">app.module.ts</span> in your
+                <code>src/app</code> directory.
+            </p>
+            <!--   <div class="code-container">
+                <div class="file-path">src/app/app.module.ts</div>
+                <pre><code class="ng-non-bindable">
+                    <span class="kwd">import</span>
+                    <span class="pln"> </span>
+                    <span class="pun">{</span>
+                        <span class="pln"> </span>
+                        <span class="typ">NgModule</span>
+                        <span class="pln"> </span>
+                    <span class="pun">}</span>
+                    <span class="kwd">from</span>
+                    <span class="pln"> </span>
+                    <span class="str">'@angular/core'</span>
+
+                    <span class="kwd">import</span>
+                    <span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="typ">BrowserModule</span><span class="pln"> </span><span class="pun">}</span>
+                    <span class="kwd">from</span><span class="pln"> </span><span class="str">'@angular/platform-browser'</span>
+
+                    <span class="kwd">import</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="typ">AppComponent</span><span class="pln"> </span><span class="pun">}</span>
+                    <span class="kwd">from</span><span class="pln"> </span><span class="str">'./app.component'</span>
+
+                    <span class="pun">@</span><span class="typ">NgModule</span><span class="pun">({</span>
+                    <span class="pln">  imports</span><span class="pun">:</span><span class="pln">      </span><span class="pun">[</span><span class="pln"> </span><span class="typ">BrowserModule</span><span class="pln"> </span><span class="pun">]</span>
+                    <span class="pln">  declarations</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"> </span><span class="typ">AppComponent</span><span class="pln"> </span><span class="pun">]</span>
+                    <span class="pln">  bootstrap</span><span class="pun">:</span><span class="pln">    </span><span class="pun">[</span><span class="pln"> </span><span class="typ">AppComponent</span><span class="pln"> </span><span class="pun">]</span>
+                    <span class="pun">})</span>
+                    <span class="kwd">export</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">AppModule</span><span class="pln"> </span><span class="pun">{}</span>
+                </code></pre>
+            </div>-->
+
+            <p>Add piece of code to create the module</p>
+
+            <h3>Standalone vs Module</h3>
+            <ul>
+                <li>
+                    In Standalone components, the dependencies are directly imported
+                    whereas in Module component the dependencies are manages in the module
+                    level. When a component is a standalone component it cannot be used in
+                    the Module component.
+                </li>
+                <li>
+                    In Standalone there is no requirement of NgModule, but NgModule
+                    decleration is required in Module based component.
+                </li>
+                <li>
+                    Standalone are good for small appications, Modules are better fit for
+                    larger and more complex applications
+                </li>
+            </ul>
+
+            <P><span class="note">Note: </span>If you are using Angular version 14 and
+                plus, the Standalone comes as a built in feature. To implement module
+                component make sure to set the
+                <span class="highlight">Standalone: false</span> in your component
+                decorator.
+            </P>
+
+            <h3>Module component</h3>
+
+        </section>
+    </div>
+</main>

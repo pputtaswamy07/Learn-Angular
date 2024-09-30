@@ -69,6 +69,12 @@ main {
   margin: 0 auto;
   padding: 20px;
 }
+code {
+  font-size: medium;
+}
+.note {
+  font-style: italic;
+}
 .sidebar {
   list-style-type: none; /* Remove bullet points */
   padding: 0; /* Remove default padding */
@@ -92,4 +98,20 @@ main {
 
 .sidebar li[routerLinkActive] {
   background-color: #e0e0e0; /* Light grey color when active */
+}
+.code-box {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+.highlight {
+  background-color: rgb(216, 214, 214);
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: #581d01;
 }
