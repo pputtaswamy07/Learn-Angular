@@ -39,3 +39,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/angular-learning-hub
           cname: learnangular.com
+
+      - name: Print GitHub Pages URL
+        run: echo "Your site is deployed at https://learnangular.com"
