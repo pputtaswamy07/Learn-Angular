@@ -11,5 +11,5 @@ import { CreateProjectComponent } from './create-project/create-project.componen
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'angular-webpage';
+  title = 'angular-learning-hub';
 }
