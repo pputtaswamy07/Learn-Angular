@@ -41,4 +41,4 @@ jobs:
           cname: learnangular
 
       - name: Print GitHub Pages URL
-        run: echo "Your site is deployed at https://learnangular.com"
+        run: echo "Your site is deployed at https://learnangular"
