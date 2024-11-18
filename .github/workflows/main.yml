@@ -2,9 +2,9 @@ name: CI/CD for Angular
 
 on:
   push:
-    branches: [main]
+    branches: [angular17]
   pull_request:
-    branches: [main]
+    branches: [angular17]
 
 jobs:
   build:
@@ -37,5 +37,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/angular-webpage
+          publish_dir: ./dist/angular-learning-hub
           cname: learnangular.com
