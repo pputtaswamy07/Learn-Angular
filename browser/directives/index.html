@@ -4,8 +4,18 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript">
+    (function () {
+      var redirect = localStorage.getItem('redirect');
+      if (redirect) {
+        localStorage.removeItem('redirect');
+        history.replaceState(null, '', redirect);
+      }
+    })();
+  </script>
 <style>main{display:grid;grid-template-columns:3fr 7fr;gap:2rem}aside{background-color:#f9f9f9;padding:1rem;box-shadow:0 0 10px #0000001a}main{font-family:Roboto Mono;line-height:1.6;color:#333;max-width:1200px;margin:0 auto;padding:20px}.sidebar{list-style-type:none;padding:0;margin:0;width:200px;background-color:#f8f8f8}.sidebar li{padding:8px 10px;cursor:pointer;transition:background-color .3s}.sidebar li:hover{background-color:#e0e0e0}.sidebar li:active{background-color:#d0d0d0}.sidebar li[routerLinkActive]{background-color:#e0e0e0}
 </style><link rel="stylesheet" href="styles-2ALKVWD2.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-2ALKVWD2.css"></noscript></head>
+
 <body><!--nghm-->
   <app-root _nghost-ng-c2553731897 ng-version="18.2.4" ngh="1" ng-server-context="ssg"><h1 _ngcontent-ng-c2553731897>Hello, angular-learning-hub</h1><router-outlet _ngcontent-ng-c2553731897></router-outlet><app-directives _nghost-ng-c736247592 ngh="0"><main _ngcontent-ng-c736247592><aside _ngcontent-ng-c736247592><ul _ngcontent-ng-c736247592 class="sidebar"><li _ngcontent-ng-c736247592 routerlink="/introduction">Introduction</li><li _ngcontent-ng-c736247592 routerlink="/createProject">Let's build a project</li><li _ngcontent-ng-c736247592 routerlink="/module">Modules</li><li _ngcontent-ng-c736247592 routerlink="/directives" routerlinkactive="active">Directives</li></ul></aside></main></app-directives><!----></app-root>
 <script src="polyfills-SCHOHYNV.js" type="module"></script><script src="main-KLTOWABJ.js" type="module"></script>
