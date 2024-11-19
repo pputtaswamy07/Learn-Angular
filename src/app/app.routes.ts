@@ -5,6 +5,7 @@ import { CreateProjectComponent } from './create-project/create-project.componen
 import { IntroductionComponent } from './introduction/introduction.component';
 import { ModuleComponent } from './module/module.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 export const routes: Routes = [
   { path: '', component: FirstPageComponent, pathMatch: 'full' },
@@ -18,5 +19,6 @@ export const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
 })
 export class AppRoutingModule {}
