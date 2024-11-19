@@ -1,13 +1,25 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>AngularWebpage</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript">
+    (function () {
+      var redirect = localStorage.getItem('redirect');
+      if (redirect) {
+        localStorage.removeItem('redirect');
+        history.replaceState(null, '', redirect);
+      }
+    })();
+  </script>
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
